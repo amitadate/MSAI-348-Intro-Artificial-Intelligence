@@ -1,0 +1,30 @@
+TESTS WITH ERRORS 
+test10 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/kb-inference/gradingtests.py", line 279, in test10
+    answer2 = KB.facts[KB.facts.index(fact3)].asserted
+ValueError: Fact('fact', Statement('goodman', [Term(Constant('A'))]), True, [[Fact('fact', Statement('person', [Term(Constant('A'))]), True, [], [Fact('fact', Statement('goodman', [Term(Constant('A'))]), False, [[...]], [], [])], []), Rule('rule', [Statement('person', [Term(Constant('A'))])], Statement('goodman', [Term(Constant('A'))]), False, [[Fact('fact', Statement('hero', [Term(Constant('A'))]), True, [], [], [Rule('rule', [Statement('person', [Term(Constant('A'))])], Statement('goodman', [Term(Constant('A'))]), False, [...], [Fact('fact', Statement('goodman', [Term(Constant('A'))]), False, [[...]], [], [])], [])]), Rule('rule', [Statement('hero', [Term(Variable('?x'))]), Statement('person', [Term(Variable('?x'))])], Statement('goodman', [Term(Variable('?x'))]), True, [], [], [Rule('rule', [Statement('person', [Term(Constant('A'))])], Statement('goodman', [Term(Constant('A'))]), False, [...], [Fact('fact', Statement('goodman', [Term(Constant('A'))]), False, [[...]], [], [])], [])])]], [Fact('fact', Statement('goodman', [Term(Constant('A'))]), False, [[...]], [], [])], [])]], [], []) is not in list
+
+test12 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/kb-inference/gradingtests.py", line 351, in test12
+    self.assertTrue(str(answer1[0]).startswith("No bindings"))
+IndexError: list index out of range
+
+test13 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/kb-inference/gradingtests.py", line 373, in test13
+    self.assertTrue(str(answer1[0]).startswith("No bindings"))
+IndexError: list index out of range
+
+-------------------------------
+TESTS FAILED  
+test5 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/kb-inference/gradingtests.py", line 151, in test5
+    self.assertTrue(len(answer4) > 0)
+AssertionError: False is not true
+
+-------------------------------
+TESTS SKIPPED 
+-------------------------------

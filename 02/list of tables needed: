@@ -1,0 +1,19 @@
+list of tables needed:
+
+as per checkpoint1:
+
+trr_weapondischarge
+data_victim
+data_allegation_areas
+trr_subjectweapon
+data_officer
+
+as per proposal(in addition to above):
+
+trr_subjectweapon
+data_officerallegation
+
+
+external:
+
+settelments data
