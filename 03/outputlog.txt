@@ -1,0 +1,118 @@
+TESTS WITH ERRORS 
+test1 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/gradingtests.py", line 92, in test1
+    path = sc.a_star_search(dis_map2, time_map2, 'Whole_Food', 'Ryan_Field')
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 34, in a_star_search
+    temp_dict[p] = following[1]+time_map[ij][p]+dis_map[p][end]
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/gradingtests.py", line 84, in interrupt
+    sys.exit(1)
+SystemExit: 1
+
+test10 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/gradingtests.py", line 164, in test10
+    path = sc.a_star_search(dis_mapM, time_mapM, 'l', 'n')
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 33, in a_star_search
+    if (time_map[ij][p]!= None):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/gradingtests.py", line 84, in interrupt
+    sys.exit(1)
+SystemExit: 1
+
+test7 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/gradingtests.py", line 140, in test7
+    path = sc.a_star_search(dis_mapM, time_mapM, 'a', 'p')
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 114, in a_star_search
+    path = get_path(tree,start,end)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 151, in get_path
+    helper_path(tree,ppath,curr_key,start)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 173, in helper_path
+    helper_path(tree,ppath,new_key,start)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 173, in helper_path
+    helper_path(tree,ppath,new_key,start)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 173, in helper_path
+    helper_path(tree,ppath,new_key,start)
+  [Previous line repeated 973 more times]
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 158, in helper_path
+    for k,v in tree.items():
+RecursionError: maximum recursion depth exceeded while calling a Python object
+
+test8 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/gradingtests.py", line 148, in test8
+    path = sc.a_star_search(dis_mapM, time_mapM, 'h', 'p')
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 31, in a_star_search
+    for p in time_map[ij]:
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/gradingtests.py", line 84, in interrupt
+    sys.exit(1)
+SystemExit: 1
+
+test9 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/gradingtests.py", line 156, in test9
+    path = sc.a_star_search(dis_mapM, time_mapM, 'h', 'a')
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 114, in a_star_search
+    path = get_path(tree,start,end)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 151, in get_path
+    helper_path(tree,ppath,curr_key,start)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 173, in helper_path
+    helper_path(tree,ppath,new_key,start)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 173, in helper_path
+    helper_path(tree,ppath,new_key,start)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 173, in helper_path
+    helper_path(tree,ppath,new_key,start)
+  [Previous line repeated 973 more times]
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/student_code.py", line 158, in helper_path
+    for k,v in tree.items():
+RecursionError: maximum recursion depth exceeded while calling a Python object
+
+-------------------------------
+TESTS FAILED  
+test4 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/gradingtests.py", line 117, in test4
+    self.assertEqual(path, ['Ryan_Field', 'YWCA', 'Cinema', 'Whole_Food', 'CVS'])
+AssertionError: Lists differ: ['Ryan_Field', 'YWCA', 'Cinema', 'Cinema', 'Whole_Food', 'CVS'] != ['Ryan_Field', 'YWCA', 'Cinema', 'Whole_Food', 'CVS']
+
+First differing element 3:
+'Cinema'
+'Whole_Food'
+
+First list contains 1 additional elements.
+First extra element 5:
+'CVS'
+
+- ['Ryan_Field', 'YWCA', 'Cinema', 'Cinema', 'Whole_Food', 'CVS']
+?                                 ----------
+
++ ['Ryan_Field', 'YWCA', 'Cinema', 'Whole_Food', 'CVS']
+
+test5 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/gradingtests.py", line 126, in test5
+    self.assertEqual(expand.expand_count, 5)
+AssertionError: 7 != 5
+
+test6 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/a-star-search/gradingtests.py", line 133, in test6
+    self.assertEqual(path, ['Campus', 'Beach', 'Whole_Food', 'CVS', 'Cinema'])
+AssertionError: Lists differ: ['Campus', 'Beach', 'Whole_Food', 'Cinema'] != ['Campus', 'Beach', 'Whole_Food', 'CVS', 'Cinema']
+
+First differing element 3:
+'Cinema'
+'CVS'
+
+Second list contains 1 additional elements.
+First extra element 4:
+'Cinema'
+
+- ['Campus', 'Beach', 'Whole_Food', 'Cinema']
++ ['Campus', 'Beach', 'Whole_Food', 'CVS', 'Cinema']
+?                                   +++++++
+
+
+-------------------------------
+TESTS SKIPPED 
+-------------------------------
